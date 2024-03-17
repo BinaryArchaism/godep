@@ -1,9 +1,11 @@
 package main
 
-import "os"
+import (
+	"os"
+
+	"github.com/BinaryArchaism/godep/internal"
+)
 
 func main() {
-
-
-	os.Exit(2)
+	internal.ParseArgs(os.Args[1:])
 }
